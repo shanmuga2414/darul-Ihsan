@@ -27,6 +27,12 @@
 .App-link {
   color: #61dafb;
 }
+.react-date-picker__wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border: none !important;
+}
 
 @keyframes App-logo-spin {
   from {
