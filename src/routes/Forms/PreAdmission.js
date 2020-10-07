@@ -5,18 +5,12 @@ import {
     Container,
     Row,
     Col,
-    // Card,
-    CardTitle,
     CardBody,
-    FormFeedback,
-    Badge,
-    CustomInput,
     Form,
     FormGroup,
     Label,
     Input,
     Button,
-    FormText
 } from './../../components';
 
 import { HeaderMain } from "./../componets/HeaderMain";
@@ -45,7 +39,7 @@ function PreAdmission() {
                 <Row>
                     <Col lg={12}>
                         {/* <Card className="mb-3"> */}
-                        <CardBody>
+                        <CardBody className="card">
 
                             { /* START Form */}
                             <Form>
@@ -332,7 +326,7 @@ function PreAdmission() {
                                 </FormGroup>
                                 <FormGroup row>
                                     <Col align="center">
-                                        <Button color="primary">Save</Button>&nbsp;
+                                        <Button color="success">Save</Button>&nbsp;
                                         <Button color="secondary">Cancel</Button>
                                     </Col>
                                 </FormGroup>

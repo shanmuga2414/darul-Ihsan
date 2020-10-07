@@ -1,25 +1,60 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { Layout, Menu, Breadcrumb } from 'antd';
 
 import './App.css';
-import ExtendedTable from './routes/ExtendedTable';
-import Forms from './routes/Forms';
+
 import PreAdmission from './routes/Forms/PreAdmission';
+import PreAdmissionManage from './routes/ExtendedTable/PreAdmissionManage';
 
 
+// const { UserOutlined, LaptopOutlined, NotificationOutlined } = icons;
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
+import logo from './logo.jpg';
+import HeaderMenu from './components/menu';
+
+const { Header, Content } = Layout;
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Redirect from="/" to="/tables" exact />
-        <Route component={ExtendedTable} path="/tables/" />
-        <Route component={Forms} path="/forms" />
-        <Route component={PreAdmission} path="/pre-admission"/>
-      </Switch>
-    </Router>
+    <Layout>
+      <Header className="header">
+        <div className="logo"><img className="logo-design" src={logo} /></div>
+        {/* <Menu theme="light" mode="horizontal" defaultSelectedKeys={['2']}>
+          <Menu.Item key="1">nav 1</Menu.Item>
+          <Menu.Item key="2">nav 2</Menu.Item>
+          <Menu.Item key="3">nav 3</Menu.Item>
+        </Menu> */}
+        <HeaderMenu />
+
+
+
+      </Header>
+      <Content style={{ padding: '0 50px' }}>
+        <Breadcrumb style={{ margin: '16px 0' }}>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>List</Breadcrumb.Item>
+          <Breadcrumb.Item>Pre Admission</Breadcrumb.Item>
+        </Breadcrumb>
+        <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
+
+          <Content style={{ padding: '0 24px', minHeight: 280 }}>
+
+            <Router>
+              <Switch>
+                <Redirect from="/" to="/pre-admission" exact />
+                {/* <Route component={ExtendedTable} path="/tables/" />
+                <Route component={Forms} path="/forms" /> */}
+                <Route component={PreAdmission} path="/pre-admission" />
+                <Route component={PreAdmissionManage} path="/pre-admission-manage" />
+              </Switch>
+            </Router>
+
+          </Content>
+        </Layout>
+      </Content>
+    </Layout>
 
   );
 }

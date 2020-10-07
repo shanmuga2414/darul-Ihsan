@@ -5,6 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'antd/dist/antd.css';
+// import 'mdbreact/dist/css/mdb.css';
 
 ReactDOM.render(
   <React.StrictMode>
