@@ -1,14 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { Layout, Menu, Breadcrumb } from 'antd';
-
 import './App.css';
-
 import PreAdmission from './routes/Forms/PreAdmission';
 import PreAdmissionManage from './routes/ExtendedTable/PreAdmissionManage';
-
-
-// const { UserOutlined, LaptopOutlined, NotificationOutlined } = icons;
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
 import logo from './logo.jpg';

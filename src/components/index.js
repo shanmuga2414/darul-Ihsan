@@ -1,7 +1,7 @@
 import Card from './Card';
 import CustomInput from './CustomInput';
 import InputGroupAddon from './InputGroupAddon';
-import StarRating from './StarRating';
+// import StarRating from './StarRating';
 export {
     Alert,
     Badge,
@@ -78,6 +78,5 @@ export {
 export {
     Card,
     CustomInput,
-    InputGroupAddon,
-    StarRating
+    InputGroupAddon
 }
