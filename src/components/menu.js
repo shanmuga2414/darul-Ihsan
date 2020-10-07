@@ -36,7 +36,7 @@ const profileMenu = (
 const menu = () => {
     return (
         <nav>
-            <ul class="nav">
+            <ul className="nav header-menu">
                 <li><a href="">Admission</a>
                     <ul>
 
@@ -91,20 +91,22 @@ const menu = () => {
                         <li><a href="#">Medical Record</a></li>
                     </ul>
                 </li>
-
+        <li>
                 <div className="profileAvatar">
                     <Dropdown overlay={profileMenu}>
                         <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                             <Avatar size={50} src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" />
-                                Martha Steward&nbsp; <DownOutlined />
+                                &nbsp;Martha Steward&nbsp; <DownOutlined />
 
                         </a>
                     </Dropdown>
 
 
                 </div>
-
+                
+</li>
             </ul>
+            
 
         </nav >
     );

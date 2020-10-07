@@ -21,14 +21,8 @@ function App() {
     <Layout>
       <Header className="header">
         <div className="logo"><img className="logo-design" src={logo} /></div>
-        {/* <Menu theme="light" mode="horizontal" defaultSelectedKeys={['2']}>
-          <Menu.Item key="1">nav 1</Menu.Item>
-          <Menu.Item key="2">nav 2</Menu.Item>
-          <Menu.Item key="3">nav 3</Menu.Item>
-        </Menu> */}
+
         <HeaderMenu />
-
-
 
       </Header>
       <Content style={{ padding: '0 50px' }}>
@@ -43,9 +37,7 @@ function App() {
 
             <Router>
               <Switch>
-                <Redirect from="/" to="/pre-admission" exact />
-                {/* <Route component={ExtendedTable} path="/tables/" />
-                <Route component={Forms} path="/forms" /> */}
+                <Redirect from="/" to="/pre-admission-manage" exact />
                 <Route component={PreAdmission} path="/pre-admission" />
                 <Route component={PreAdmissionManage} path="/pre-admission-manage" />
               </Switch>

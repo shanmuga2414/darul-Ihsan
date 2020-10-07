@@ -13,7 +13,7 @@ import {
     Button,
 } from './../../components';
 
-import { HeaderMain } from "./../componets/HeaderMain";
+// import { HeaderMain } from "./../componets/HeaderMain";
 import { HeaderDemo } from "./../componets/HeaderDemo";
 
 
@@ -48,7 +48,7 @@ function PreAdmission() {
                                     <Label for="inputName" sm={3}>
                                         Name of CYP
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={4}>
                                         <Input
                                             type="text"
                                             name="nameOfCyp"
@@ -56,14 +56,10 @@ function PreAdmission() {
                                             placeholder="Enter the CYP Name"
                                         />
                                     </Col>
-                                </FormGroup>
-                                { /* END Input */}
-                                { /* START Input */}
-                                <FormGroup row>
-                                    <Label for="inputAge" sm={3} >
+                                    <Label for="inputAge" sm={2} >
                                         D.O.B / Age
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={3}>
                                         <DatePicker className="form-control"
                                             onChange={age}
                                             value={value}
@@ -71,12 +67,13 @@ function PreAdmission() {
                                     </Col>
                                 </FormGroup>
                                 { /* END Input */}
+
                                 { /* START Input */}
                                 <FormGroup row>
                                     <Label for="inputIndentificationNo" sm={3}>
                                         Identification No.
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={4}>
                                         <Input
                                             type="text"
                                             name="identificationNo"
@@ -84,14 +81,10 @@ function PreAdmission() {
                                             placeholder="Enter the Identification No"
                                         />
                                     </Col>
-                                </FormGroup>
-                                { /* END Input */}
-                                { /* START Input */}
-                                <FormGroup row>
-                                    <Label for="inputSex" sm={3}>
+                                    <Label for="inputSex" sm={2}>
                                         Sex
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={3}>
                                         <FormGroup>
                                             <FormGroup check inline>
                                                 <Label check>
@@ -111,12 +104,13 @@ function PreAdmission() {
                                     </Col>
                                 </FormGroup>
                                 { /* END Input */}
+
                                 { /* START Input */}
                                 <FormGroup row>
                                     <Label for="inputRace" sm={3}>
                                         Race / Religion
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={4}>
                                         <Input
                                             type="text"
                                             name="race"
@@ -124,14 +118,10 @@ function PreAdmission() {
                                             placeholder="Enter the Race / Religion"
                                         />
                                     </Col>
-                                </FormGroup>
-                                { /* END Input */}
-                                { /* START Input */}
-                                <FormGroup row>
-                                    <Label for="inputNationality" sm={3}>
+                                    <Label for="inputNationality" sm={2}>
                                         Nationality
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={3}>
                                         <Input
                                             type="select"
                                             name="nationality"
@@ -144,13 +134,14 @@ function PreAdmission() {
                                         </Input>
                                     </Col>
                                 </FormGroup>
-                                { /* END Select */}
+                                { /* END Input */}
+
                                 { /* START Input */}
                                 <FormGroup row>
                                     <Label for="inputResidential" sm={3}>
                                         Current Residential
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={4}>
                                         <Input
                                             type="select"
                                             name="residential"
@@ -162,14 +153,10 @@ function PreAdmission() {
                                             <option>Thailand</option>
                                         </Input>
                                     </Col>
-                                </FormGroup>
-                                { /* END Select */}
-                                { /* START Input */}
-                                <FormGroup row>
-                                    <Label for="inputEducation" sm={3}>
+                                    <Label for="inputEducation" sm={2}>
                                         Education
                                     </Label>
-                                    <Col sm={9}>
+                                    <Col sm={3}>
                                         <Input
                                             type="text"
                                             name="education"
@@ -178,7 +165,8 @@ function PreAdmission() {
                                         />
                                     </Col>
                                 </FormGroup>
-                                { /* END Input */}
+                                { /* END Select */}
+
                                 { /* START Input */}
                                 <FormGroup row>
                                     <Label for="inputMedicalCondition" sm={3}>
@@ -216,7 +204,7 @@ function PreAdmission() {
                                     <Label for="inputReferral" sm={3}>
                                         Point of Referral:
                                     </Label>
-                                    <Col sm={5}>
+                                    <Col sm={4}>
                                         <Input
                                             type="textarea"
                                             name="referral"
@@ -225,7 +213,7 @@ function PreAdmission() {
                                         />
                                     </Col>
 
-                                    <Label for="inputAge" sm={1} >
+                                    <Label for="inputAge" sm={2} >
                                         Date
                                     </Label>
                                     <Col sm={3}>

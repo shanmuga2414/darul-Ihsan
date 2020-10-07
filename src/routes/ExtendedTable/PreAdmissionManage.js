@@ -3,9 +3,11 @@ import { MDBDataTable } from 'mdbreact';
 import {
     Container,
     Row,
-    Col
+    Col,
+    Button
 } from '../../components';
-
+import { UserAddOutlined } from '@ant-design/icons';
+import { HeaderDemo } from "./../componets/HeaderDemo";
 
 const DatatablePage = () => {
     const data = {
@@ -176,8 +178,22 @@ const DatatablePage = () => {
     return (
         <React.Fragment>
             <Container>
+                { /* START Header 1 */}
+                <Row>
+                    <Col lg={12}>
+                        <HeaderDemo
+                            title="Pre Admissions List"
+                        />
+                    </Col>
+                </Row>
+                { /* END Header 1 */}
                 <Row>
                     <Col lg={12} className="card">
+                        <div align="right" className="mt-2">
+                            <a href="/pre-admission">
+                                <Button color="success"><UserAddOutlined className="anticons" /> New Pre Admission</Button>
+                            </a>
+                        </div>
                         <MDBDataTable
                             striped
                             bordered
