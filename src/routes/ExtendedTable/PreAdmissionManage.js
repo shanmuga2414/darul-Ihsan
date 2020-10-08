@@ -6,7 +6,7 @@ import {
     Col,
     Button
 } from '../../components';
-import { UserAddOutlined } from '@ant-design/icons';
+import { UserAddOutlined, ImportOutlined, FilePdfOutlined, ExportOutlined } from '@ant-design/icons';
 import { HeaderDemo } from "./../componets/HeaderDemo";
 
 const DatatablePage = () => {
@@ -189,10 +189,14 @@ const DatatablePage = () => {
                 { /* END Header 1 */}
                 <Row>
                     <Col lg={12} className="card">
-                        <div align="right" className="mt-2">
+                        <   div align="right" className="mt-2">
+                            <Button outline color="secondary"><ImportOutlined /> Import Xls Template</Button> &nbsp;
+                                <Button outline color="secondary"><ExportOutlined /> Export to Excel</Button> &nbsp;
+                                <Button outline color="secondary"><FilePdfOutlined /> Pdf Report</Button> &nbsp;
                             <a href="/pre-admission">
-                                <Button color="success"><UserAddOutlined className="anticons" /> New Pre Admission</Button>
+                                <Button color="success"><UserAddOutlined /> New Pre Admission</Button>
                             </a>
+                            <hr />
                         </div>
                         <MDBDataTable
                             striped
