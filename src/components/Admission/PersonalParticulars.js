@@ -1,47 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-    Container,
     Row,
     Col,
-    CardBody,
     Form,
     FormGroup,
-    CustomInput,
     FormText,
     Label,
-    Input,
-    Button,
+    Input
 } from './../../components';
 import _ from 'lodash';
-import DatePicker from 'react-datepicker';
-import moment from 'moment';
+import DatePicker from 'react-date-picker';
 
 const MAX_BOARD_SIZE = 1990;
-
-function onChange(date, dateString) {
-    console.log(date, dateString);
-}
 
 class PersonalParticulars extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             firstStep: "first step here",
-            startDate: new Date()
+            agevalue: new Date(),
+            parentAge: new Date()
 
         };
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.ageChange = this.ageChange.bind(this);
+        this.parentChange = this.parentChange.bind(this);
     }
-    handleChange(date) {
+    ageChange(date) {
         this.setState({
-            startDate: date
+            agevalue: date
         })
     }
-    handleSubmit(e) {
-        e.preventDefault();
-        let main = this.state.startDate
-        console.log(main.format('L'));
+    parentChange(date) {
+        this.setState({
+            parentAge: date
+        })
     }
 
     isValidated() {
@@ -92,11 +84,11 @@ class PersonalParticulars extends React.Component {
                                 Date Of Birth
                         </Label>
                             <Col sm={3}>
+
                                 <DatePicker className="form-control"
-                                    selected={this.state.startDate}
-                                    onChange={this.handleChange}
-                                    name="startDate"
-                                    dateFormat="dd/MM/yyyy"
+                                    onChange={this.ageChange}
+                                    value={this.state.agevalue}
+                                    showLeadingZeros={true}
                                 />
 
                             </Col>
@@ -114,7 +106,7 @@ class PersonalParticulars extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputName" sm={2}>
                                 Citizenship:
                                     </Label>
@@ -145,21 +137,21 @@ class PersonalParticulars extends React.Component {
                                         </FormGroup>
                                     </Col>
                                     <Col sm={3}>
-                                        <FormGroup>
-                                            <Input
-                                                type="text"
-                                                name="country"
-                                                id="country"
-                                                placeholder="Country Name"
-                                            />
-                                        </FormGroup>
+
+                                        <Input
+                                            type="text"
+                                            name="country"
+                                            id="country"
+                                            placeholder="Country Name"
+                                        />
+
                                     </Col>
                                 </FormGroup>
                             </Col>
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0 mt-0">
                             <Label for="inputBirthOrder" sm={2}>
                                 Birth Order:
                                     </Label>
@@ -200,12 +192,11 @@ class PersonalParticulars extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+
+                        <FormGroup row className="mb-0">
                             <Label for="inputEducation" sm={12}>
                                 Academic Education:
                         </Label>
-                        </FormGroup>
-                        <FormGroup row>
                             <Label for="inputPrimary" sm={2}>
                                 Primary
                         </Label>
@@ -244,7 +235,7 @@ class PersonalParticulars extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputPrimary" sm={2}>
                                 Secondary
                         </Label>
@@ -284,7 +275,7 @@ class PersonalParticulars extends React.Component {
                         {/* END Input */}
 
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputITE" sm={2}>
                                 ITE
                         </Label>
@@ -339,7 +330,7 @@ class PersonalParticulars extends React.Component {
                         {/* END Input */}
 
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputITE" sm={2}>
                                 Polytechnic
                         </Label>
@@ -424,7 +415,7 @@ class PersonalParticulars extends React.Component {
                         </Row>
                         <br />
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputName" sm={2}>
                                 Name of Parent / Guardian / Next of Kin * (as in NRIC) :
                         </Label>
@@ -437,7 +428,7 @@ class PersonalParticulars extends React.Component {
                                 />
                             </Col>
                         </FormGroup>
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="relationship" sm={2}>
                                 Relationship
                         </Label>
@@ -494,7 +485,7 @@ class PersonalParticulars extends React.Component {
                         </FormGroup>
                         { /* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="ownership" sm={2}>
                                 Home Ownership
                         </Label>
@@ -549,17 +540,12 @@ class PersonalParticulars extends React.Component {
                                 Date Of Birth
                         </Label>
                             <Col sm={3}>
+
                                 <DatePicker className="form-control"
-                                    selected={this.state.startDate}
-                                    onChange={this.handleChange}
-                                    name="startDate"
-                                    dateFormat="dd/MM/yyyy"
-                                />
-                                {/* <DatePicker className="form-control"
-                                    onChange={parentAge}
-                                    value={parentValue}
+                                    onChange={this.parentChange}
+                                    value={this.state.parentAge}
                                     showLeadingZeros={true}
-                                /> */}
+                                />
                             </Col>
                             <Label for="inputAge" sm={1}>
                                 Age
@@ -576,7 +562,7 @@ class PersonalParticulars extends React.Component {
                         {/* END Input */}
 
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="ownership" sm={2}>
                                 Citizenship
                         </Label>

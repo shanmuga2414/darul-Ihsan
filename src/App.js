@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Breadcrumb } from 'antd';
 import './App.css';
 import PreAdmission from './routes/Forms/PreAdmission';
 import Forms from './routes/Forms';
@@ -19,7 +19,7 @@ function App() {
   return (
     <Layout>
       <Header className="header">
-        <div className="logo"><img className="logo-design" src={logo} /></div>
+        <div className="logo"><img alt="logo-design" className="logo-design" src={logo} /></div>
 
         <HeaderMenu />
 

@@ -17,9 +17,9 @@ import {
 // import { HeaderMain } from "./../componets/HeaderMain";
 import { HeaderDemo } from "./../componets/HeaderDemo";
 
-function onChange(date, dateString) {
-    console.log(date, dateString);
-}
+// function onChange(date, dateString) {
+//     console.log(date, dateString);
+// }
 
 function PreAdmission() {
     const [value, age] = useState(new Date());
@@ -27,11 +27,10 @@ function PreAdmission() {
     const [rvalue, recordedDate] = useState(new Date());
     return (
         <React.Fragment>
-            <Container>
-
+            <Container className="content-shadow">
                 { /* START Header 1 */}
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={12} className="m-0 p-0">
                         <HeaderDemo
                             title="Pre Admission Form"
                         />
@@ -40,7 +39,7 @@ function PreAdmission() {
                 { /* END Header 1 */}
                 { /* START Section 1 */}
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={12} className="m-0 p-0">
                         {/* <Card className="mb-3"> */}
                         <CardBody className="card">
 

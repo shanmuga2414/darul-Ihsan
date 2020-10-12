@@ -5,13 +5,8 @@ import {
     Row,
     Col,
     CardBody,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-    Button,
+
 } from './../../components';
-import { HeaderDemo } from "../componets/HeaderDemo";
 import PersonalParticulars from './../../components/Admission/PersonalParticulars';
 import Declaration from './../../components/Admission/Declaration';
 
@@ -33,17 +28,7 @@ class SecondStep extends React.Component {
         return <div>Hey from Second</div>;
     }
 }
-class ThirdStep extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            thirdStep: "third step here"
-        };
-    }
-    render() {
-        return <div>Hey from Third</div>;
-    }
-}
+
 
 var steps = [
     // this step hasn't got a isValidated() function, so it will be considered to be true
@@ -62,29 +47,18 @@ class WizardExample extends React.Component {
         return (
             <React.Fragment>
                 <Container>
-                    { /* START Header 1 */}
-                    {/* <Row>
-                        <Col lg={12}>
-                            <HeaderDemo
-                                title="Admission Form"
-                            />
-                        </Col>
-                    </Row> */}
-                    { /* END Header 1 */}
                     <Row>
                         <Col lg={12}>
-                            {/* <Card className="mb-3"> */}
-                            <CardBody className="card">
-                                <ReactWizard
-                                    steps={steps}
-                                    navSteps
-                                    title="Admission Form"
-                                    headerTextCenter
-                                    // validate
-                                    color="green"
-                                    finishButtonClick={this.finishButtonClick}
-                                />
-                            </CardBody>
+
+                            <ReactWizard
+                                steps={steps}
+                                navSteps
+                                title="Admission Form"
+                                headerTextCenter
+                                // validate
+                                color="green"
+                                finishButtonClick={this.finishButtonClick}
+                            />
                         </Col>
                     </Row>
                 </Container>

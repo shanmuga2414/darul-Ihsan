@@ -177,10 +177,10 @@ const DatatablePage = () => {
 
     return (
         <React.Fragment>
-            <Container>
+            <Container className="content-shadow">
                 { /* START Header 1 */}
                 <Row>
-                    <Col lg={12}>
+                    <Col lg={12} className="p-0 m-0">
                         <HeaderDemo
                             title="Pre Admissions List"
                         />
@@ -194,7 +194,7 @@ const DatatablePage = () => {
                                 <Button outline color="secondary"><ExportOutlined /> Export to Excel</Button> &nbsp;
                                 <Button outline color="secondary"><FilePdfOutlined /> Pdf Report</Button> &nbsp;
                             <a href="/pre-admission">
-                                <Button color="success"><UserAddOutlined /> New Pre Admission</Button>
+                                <Button color="warning"><UserAddOutlined /> New Pre Admission</Button>
                             </a>
                             <hr />
                         </div>

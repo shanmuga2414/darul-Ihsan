@@ -95,7 +95,7 @@ const menu = () => {
                 <div className="profileAvatar">
                     <Dropdown overlay={profileMenu}>
                         <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-                            <Avatar size={50} src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" />
+                            <Avatar size={50} src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
                                 &nbsp;Martha Steward&nbsp; <DownOutlined />
 
                         </a>
