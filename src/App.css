@@ -141,10 +141,16 @@ padding:0 !important;
 .anticon svg {
   margin-top:-10px;
 }
-
+.ant-btn-primary {
+  background-color:#28a745 !important;
+}
+.ant-layout .site-layout-background{
+  padding:0px !important;
+}
 .mdb-datatable-filter{
   width:186px;
 }
+
 /* .react-date-picker__inputGroup__divider{
   letter-spacing: 3px;
 }
@@ -312,6 +318,26 @@ margin:0 !important;
   right: 10px; 
 }
 
+/*Header DEmo design*/
+.media{
+  background-color: #28a745 !important;
+  color:#fff !important;
+ 
+}
+.media-body h4{
+  color:#fff !important;
+  text-align:center;
+  padding-top:10px;
+  
+}
+
+.content-shadow{
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  /* padding:0px !important; */
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+ 
+}
 
 /* Wizard Design */
 
@@ -339,6 +365,15 @@ margin:0 !important;
 }
 .wizardCheckbox{
   margin-left:20px;
+}
+.wizard-container .card-wizard .tab-content {
+  padding:0px !important;
+}
+.card-body {
+  padding: 1.0rem !important;
+}
+.wizard-container .card-wizard .card-footer .btn {
+  background-color: #28a745 !important;
 }
 
 @keyframes App-logo-spin {
