@@ -53,7 +53,7 @@ class OthersDeclaration extends React.Component {
                     { /* START Input */}
                     {this.state.rows.map((row, i) => (
 
-                        <FormGroup row >
+                        <FormGroup row className="mb-0">
                             <Col sm={7}>
                                 <Input type="text" name="Others" id="othersInput" />
                             </Col>

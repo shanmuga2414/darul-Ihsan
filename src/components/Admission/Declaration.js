@@ -106,7 +106,7 @@ class Declaration extends React.Component {
                             <span>(Where applicable, please attach the following supporting documents with this application form)</span>
                         </Row>
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputBirthCertificate" sm={7}>
                                 1. Birth Certificate
                                     </Label>
@@ -121,7 +121,7 @@ class Declaration extends React.Component {
                                     <option>Copy</option>
                                 </Input>
                             </Col>
-                            <Col sm={3}>
+                            <Col sm={3} className="mb-0">
                                 <FormGroup>
                                     <FormGroup check inline>
                                         <Label check>
@@ -146,7 +146,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputNricCertificate" sm={7}>
                                 2. NRIC of Parent / Guardian / Next of Kin
                                     </Label>
@@ -185,7 +185,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputParentCpfCertificate" sm={7}>
                                 3. Parent / Guardian / Next of Kin's latest pay slip, letter from Employer confirming latest pay or latest CPF statement
                                     </Label>
@@ -225,7 +225,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputGuardianLetter" sm={7}>
                                 4. Legal Guardian Letter (if applicable)
                                     </Label>
@@ -265,7 +265,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputParentUnemployemnt" sm={7}>
                                 5. Letter of Declaration of Unemployment by Parent / Guardian / Next of Kin
                                     </Label>
@@ -305,7 +305,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputMarriageCertificate" sm={7}>
                                 6. Marraige / Divorce / Death Cetficate /Syariah Court Letter (if applicable)
                                     </Label>
@@ -344,7 +344,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputPassportCertificate" sm={7}>
                                 7. Passport
                                     </Label>
@@ -384,7 +384,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputHealthBooklet" sm={7}>
                                 8. Health Booklet
                                     </Label>
@@ -424,7 +424,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputSchoolSmartCard" sm={7}>
                                 9. School Smartcard / EZ Link Card
                                     </Label>
@@ -464,7 +464,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputMedicalCertificate" sm={7}>
                                 10. Medical Report & Appointment Card (if applicable)
                                     </Label>
@@ -504,7 +504,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputBankBook" sm={7}>
                                 11. Bank Book
                                     </Label>
@@ -544,7 +544,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputfinacialSubsidy" sm={7}>
                                 12. Supporting Documents: Other Financial Subsidy
                                     </Label>
@@ -584,7 +584,7 @@ class Declaration extends React.Component {
                         </FormGroup>
                         {/* END Input */}
                         { /* START Input */}
-                        <FormGroup row>
+                        <FormGroup row className="mb-0">
                             <Label for="inputVisitationCard" sm={7}>
                                 13. Visitation card - Prison / DRC / Others (if applicable)
                                     </Label>
