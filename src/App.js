@@ -19,7 +19,7 @@ function App() {
   return (
     <Layout>
       <Header className="header">
-        <div className="logo"><img alt="logo-design" className="logo-design" src={logo} /></div>
+        <div className="logo"><img alt="darul-ishsan" className="logo-design" src={logo} /></div>
 
         <HeaderMenu />
 

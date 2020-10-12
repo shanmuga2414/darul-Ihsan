@@ -78,7 +78,7 @@ const menu = () => {
                         <li><a href="#">Academic Assessment</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Event/Activities</a>
+                <li><a href="#">Activities</a>
                     <ul>
                         <li><a href="#">Event Attendance</a></li>
                         <li><a href="#">Events Feedback</a></li>
@@ -96,7 +96,7 @@ const menu = () => {
                     <Dropdown overlay={profileMenu}>
                         <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                             <Avatar size={50} src="https://mdbootstrap.com/img/Photos/Avatars/img%20(27).jpg" />
-                                &nbsp;Martha Steward&nbsp; <DownOutlined />
+                                &nbsp;Ahmad Taufiq&nbsp; <DownOutlined />
 
                         </a>
                     </Dropdown>

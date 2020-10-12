@@ -347,9 +347,9 @@ margin:0 !important;
 .wizard-navigation ul li{
   margin-right:0px !important;
 }
-.wizard-navigation a{
+/* .wizard-navigation a{
   pointer-events: none;
-}
+} */
 .wizardTitleBackground{
   background:#dee2e6;
   width:100%;

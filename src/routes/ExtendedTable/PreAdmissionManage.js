@@ -4,7 +4,8 @@ import {
     Container,
     Row,
     Col,
-    Button
+    Button,
+    CardBody
 } from '../../components';
 import { UserAddOutlined, ImportOutlined, FilePdfOutlined, ExportOutlined } from '@ant-design/icons';
 import { HeaderDemo } from "./../componets/HeaderDemo";
@@ -180,7 +181,7 @@ const DatatablePage = () => {
             <Container className="content-shadow">
                 { /* START Header 1 */}
                 <Row>
-                    <Col lg={12} className="p-0 m-0">
+                    <Col lg={12} className="mt-3">
                         <HeaderDemo
                             title="Pre Admissions List"
                         />
@@ -188,22 +189,24 @@ const DatatablePage = () => {
                 </Row>
                 { /* END Header 1 */}
                 <Row>
-                    <Col lg={12} className="card">
-                        <   div align="right" className="mt-2">
-                            <Button outline color="secondary"><ImportOutlined /> Import Xls Template</Button> &nbsp;
+                    <Col lg={12}>
+                        <CardBody className="card">
+                            < div align="right" className="mt-2">
+                                <Button outline color="secondary"><ImportOutlined /> Import Xls Template</Button> &nbsp;
                                 <Button outline color="secondary"><ExportOutlined /> Export to Excel</Button> &nbsp;
                                 <Button outline color="secondary"><FilePdfOutlined /> Pdf Report</Button> &nbsp;
                             <a href="/pre-admission">
-                                <Button color="warning"><UserAddOutlined /> New Pre Admission</Button>
-                            </a>
-                            <hr />
-                        </div>
-                        <MDBDataTable
-                            striped
-                            bordered
-                            hover
-                            data={data}
-                        />
+                                    <Button color="warning"><UserAddOutlined /> New Pre Admission</Button>
+                                </a>
+                                <hr />
+                            </div>
+                            <MDBDataTable
+                                striped
+                                bordered
+                                hover
+                                data={data}
+                            />
+                        </CardBody>
                     </Col>
                 </Row>
             </Container>
