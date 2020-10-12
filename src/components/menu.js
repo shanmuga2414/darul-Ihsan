@@ -49,7 +49,7 @@ const menu = () => {
                         </li>
                         <li><a href="#">Admission</a>
                             <ul>
-                                <li><a href="#">Admission Form</a></li>
+                                <li><a href="/admission">Admission Form</a></li>
                                 <li><a href="#">Admission Intake Form</a></li>
                                 <li><a href="#">Parent/Guardian Induction</a></li>
                             </ul>

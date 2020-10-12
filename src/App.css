@@ -145,8 +145,34 @@ padding:0 !important;
 .mdb-datatable-filter{
   width:186px;
 }
+/* .react-date-picker__inputGroup__divider{
+  letter-spacing: 3px;
+}
+.react-date-picker__inputGroup input{
+  letter-spacing: 3px;
+} */
+.react-date-picker .react-date-picker__wrapper  .react-date-picker__inputGroup__input {
+  box-sizing: content-box !important;
+  -webkit-box-sizing:content-box !important;
+}
+.react-date-picker__inputGroup__day, .react-date-picker__inputGroup__month{
+  width:20px !important;
+}
+.react-date-picker__inputGroup__input--hasLeadingZero{
+  width:10px !important;
+}
+/* .react-date-picker__inputGroup__input {
+  min-width: 1.0em !important;
+  height: 100%;
+  position: relative;
+  padding: 0 1px;
+  border: 0;
+  background: none;
+  font: inherit;
+  box-sizing: content-box !important;
+  -moz-appearance: textfield;
+} */
 
- 
 /* @mixin element($element) {
   &__#{$element} {
     @content;
@@ -284,6 +310,35 @@ margin:0 !important;
   border: 5px solid transparent; 
   border-right-color: #28a745;
   right: 10px; 
+}
+
+
+/* Wizard Design */
+
+.wizard-container [data-background-color="green"] {
+  background-color: #28a745 !important;
+}
+.wizard-navigation ul li{
+  margin-right:0px !important;
+}
+.wizard-navigation a{
+  pointer-events: none;
+}
+.wizardTitleBackground{
+  background:#dee2e6;
+  width:100%;
+  padding:5px;
+ 
+}
+.wizard-container .card-title{
+  border-bottom: 1px solid #ddd;
+  color:#fff !important;
+}
+.form-check-label {
+  margin-top: 10px;
+}
+.wizardCheckbox{
+  margin-left:20px;
 }
 
 @keyframes App-logo-spin {

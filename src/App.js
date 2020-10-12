@@ -3,8 +3,12 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import { Layout, Menu, Breadcrumb } from 'antd';
 import './App.css';
 import PreAdmission from './routes/Forms/PreAdmission';
+import Forms from './routes/Forms';
+import Admission from './routes/Forms/Admission';
 import PreAdmissionManage from './routes/ExtendedTable/PreAdmissionManage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-bootstrap-wizard/dist/react-wizard.css"
+import 'react-datepicker/dist/react-datepicker.css';
 import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
 import logo from './logo.jpg';
 import HeaderMenu from './components/menu';
@@ -35,6 +39,8 @@ function App() {
                 <Redirect from="/" to="/pre-admission-manage" exact />
                 <Route component={PreAdmission} path="/pre-admission" />
                 <Route component={PreAdmissionManage} path="/pre-admission-manage" />
+                <Route component={Forms} path="/forms" />
+                <Route component={Admission} path="/admission" />
               </Switch>
             </Router>
 

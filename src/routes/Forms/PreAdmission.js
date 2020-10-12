@@ -13,10 +13,13 @@ import {
     Button,
 } from './../../components';
 
+
 // import { HeaderMain } from "./../componets/HeaderMain";
 import { HeaderDemo } from "./../componets/HeaderDemo";
 
-
+function onChange(date, dateString) {
+    console.log(date, dateString);
+}
 
 function PreAdmission() {
     const [value, age] = useState(new Date());
@@ -63,6 +66,7 @@ function PreAdmission() {
                                         <DatePicker className="form-control"
                                             onChange={age}
                                             value={value}
+                                            showLeadingZeros={true}
                                         />
                                     </Col>
                                 </FormGroup>
@@ -220,6 +224,7 @@ function PreAdmission() {
                                         <DatePicker className="form-control"
                                             onChange={referralDate}
                                             value={dvalue}
+                                            showLeadingZeros={true}
                                         />
                                     </Col>
                                 </FormGroup>
@@ -309,6 +314,7 @@ function PreAdmission() {
                                         <DatePicker className="form-control"
                                             onChange={recordedDate}
                                             value={rvalue}
+                                            showLeadingZeros={true}
                                         />
                                     </Col>
                                 </FormGroup>
