@@ -1,4 +1,6 @@
 import React from "react";
+import { withRouter } from 'react-router';
+import { Redirect } from 'react-router-dom'
 import ReactWizard from "react-bootstrap-wizard";
 import {
     Container,
@@ -11,6 +13,9 @@ import PersonalParticulars from './../../components/Admission/PersonalParticular
 import Declaration from './../../components/Admission/Declaration';
 import FamilyParticulars from './../../components/Admission/FamilyParticulars';
 
+
+
+
 var steps = [
     // this step hasn't got a isValidated() function, so it will be considered to be true
     { stepName: "Personal Particulars", component: PersonalParticulars },
@@ -20,9 +25,16 @@ var steps = [
     { stepName: "Declaration", component: Declaration }
 ];
 
-class WizardExample extends React.Component {
+class Admission extends React.Component {
+
     finishButtonClick(allStates) {
-        console.log(allStates);
+        // let history = useHistory;
+        // console.log(allStates);
+        console.log('welcome')
+        // this.props.history.push("/");
+        window.location.href = '/admission-manage'
+        // return <Redirect to='/pre-admission' />
+
     }
     render() {
         return (
@@ -50,4 +62,4 @@ class WizardExample extends React.Component {
     }
 }
 
-export default WizardExample;
+export default withRouter(Admission);
